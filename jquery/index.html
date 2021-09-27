@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="ok" mascota="Colmillos" class="test valor">
+<input typet="text" id="hola" mascota="Firulais" class="test valor">
+</body>
+   <script src="jquery.min.js"></script> 
+   <script>
+
+// $("#ok").click(function()
+ //{
+  //   alert();
+// });
+
+$(".test").click(function()
+{   console.log($(this));
+    //alert();
+});
+
+$(".valor").change(function(){
+    //alert($(this).val());
+    alert($(this).attr('mascota'));
+});
+
+   </script>
+
+</html>
