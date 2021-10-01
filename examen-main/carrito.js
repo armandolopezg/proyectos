@@ -27,7 +27,7 @@ const baseDeDatos = [
 ];
 
 let carrito = [];
-let total = 0;
+var total = 0;
 const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
@@ -171,6 +171,7 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
 renderizarProductos();
+function grafica(){
 var ctx= document.getElementById("myChart").getContext("2d");
 var myChart= new Chart(ctx,{
 type:"bar",
@@ -178,7 +179,7 @@ data:{
 labels:['Destroy All humans','Spider-Man Ultimate Edition','Blazzblue Cross Tag Battle','Shrek','Total'],
 datasets:[{
     label:'Precios',
-    data:[1300,1200,1200,1500],
+    data:[1400,1200,1200,1500,total],
         backgroundColor:[
         'rgb(66, 134, 244,0.5)',
         'rgb(74, 135, 72,0.5)',
@@ -199,3 +200,14 @@ beginAtZero:true
 }
 }
 });
+}
+//Constante
+const DOMRecargar = document.querySelector('#recargar');
+
+//Evento
+DOMRecargar.addEventListener('click', recargargrafic);
+
+//Funcion
+function recargargrafic() {
+    grafica();
+}
