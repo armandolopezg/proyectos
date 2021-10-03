@@ -30,7 +30,7 @@ var minas = inicializaMatriz();
 					}else{
 						divObj.style.backgroundImage = "url(imagenes/bomba.png)";						
 						abrirTablero(minas);
-						alert("Perdiste =(.");
+						alert("Perdiste.");
 					}
 				}						
 			}				
