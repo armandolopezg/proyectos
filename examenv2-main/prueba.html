@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <title>Carrito</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center bg-dark text-white mr-1"><h1>Tienda de videojuegos</h1></header>
+        <p></p>
+        <button id="boton1">añadir grafica producto 1</button>
+        <button id="boton2">añadir grafica producto 2</button>
+        <button id="boton3">añadir grafica producto 3</button>
+        <button id="boton4">añadir grafica producto 4</button>
+        <br>
+        <button id="quitar1">quitar un producto 1</button>
+        <button id="quitar2">quitar un producto 2</button>
+        <button id="quitar3">quitar un producto 3</button>
+        <button id="quitar4">quitar un producto 4</button>
+        <div class="row">
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito de compra</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span><a> MXN</a></p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+        </div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <!--Boton recargar grafica-->
+    <div class="text-center">
+        <button id="recargar" class="text-center">Recargar grafica</button>
+    </div>
+    <div class="text-center">
+        <p class="font-weight-bold">TODOS LOS DERECHOS RESERVADOS  © Shrek</p>
+    </div>
+</body>
+<script src="carrito.js"></script>
+
+</html>
